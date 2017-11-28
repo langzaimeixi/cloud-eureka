@@ -21,7 +21,7 @@ public class EurekaClientApplication {
 
 	@RequestMapping("/hehe")
 	public String sayHehe(@RequestParam String name) {
-		return "say hello to " + name;
+		return "say hehe to " + name;
 	}
 
 }
