@@ -9,8 +9,9 @@ import org.springframework.web.bind.annotation.RequestParam;
  * @author: lilang
  * Date: 2017/12/19 ProjectName: cloud-eureka Version：5.0.0
  */
-@FeignClient(value = "service-hehe")
+@FeignClient(value = "service-hehe",fallback = FeignHelloServiceHystric.class)
 public interface FeignHelloService {
+
 
     @RequestMapping(value = "/hehe", method = RequestMethod.GET)
     String sayHello(@RequestParam(value = "name") String name);
