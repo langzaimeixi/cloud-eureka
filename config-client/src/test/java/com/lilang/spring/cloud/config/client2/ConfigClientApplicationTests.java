@@ -1,4 +1,4 @@
-package com.lilang.spring.cloud.config.client;
+package com.lilang.spring.cloud.config.client2;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
